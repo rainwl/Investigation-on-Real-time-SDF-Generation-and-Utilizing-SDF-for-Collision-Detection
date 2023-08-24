@@ -3,24 +3,38 @@
 `VFX` `Signed Distance Fields` `Visual Effects Graphs` `Compute Shader` `Collision` `Boolean`
 
 ## Overview
-Investigation on Real-time SDF Generation and Utilizing SDF for Collision Detection
+Investigation on Real-time SDF Generation and Utilizing SDF for Collision Detection.
 
-为了实现连续且实时的布尔,以及物理计算中的软体实时变形和破碎模拟.
-我们拟调研和验证一种基于符号距离函数的碰撞和布尔方式来代替原本的基于网格的显示表达方案.
 
-不幸的是,经过了为期几天的调研,以失败告终.但是其中的经验也弥足珍贵,我有必要记录下来,为其他方向的预研比如软组织渲染提供一些思路.
+In pursuit of achieving continuous and real-time boolean operations, 
+as well as soft real-time deformation and fracturing simulations in physics-based calculations, 
+we embarked on investigating and validating an alternative approach based on 
+signed distance functions for collision and boolean operations. 
+This approach aimed to replace the original mesh-based representation scheme.
 
-我主要调研了模型网格实时生成符号距离函数的方式和性能表现,以及符号距离函数通过各种方式(比如cube marching)来实时生成网格的方式.
-考虑到实时生成网格后,还需要实时计算法线和纹理等,是一个更具挑战的工作,所以我放弃了sdf经过运算处理后重新生成网格的路线.我使用VFX来处理sdf,
-通过粒子渲染来达到一个更好的效果呈现.
+Regrettably, after several days of dedicated research, our efforts culminated in failure.
+Nonetheless, the experiences gained are invaluable, warranting documentation for potential 
+application in other avenues, such as soft tissue rendering.
 
-接下来我将从几个方面来介绍我的研究:
+My primary focus was on exploring methods and performance aspects of real-time signed distance 
+function generation for model mesh, as well as techniques for generating mesh in real-time using 
+signed distance functions (e.g., cube marching). Considering the additional challenge of 
+real-time computation of normals and textures after mesh generation, 
+I abandoned the path of re-generating grids from processed SDFs. 
+Instead, I turned to Visual Effects (VFX) techniques to handle SDFs, 
+leveraging particle rendering to achieve more favorable presentation outcomes.
 
-- 网格实时计算sdf及其性能表现
-- sdf实时生成网格以及性能表现
-- 粒子和sdf的碰撞
-- sdf之间的运算
-- 
+Moving forward, I will elaborate on my research across several dimensions:
+
+- Concept of Signed Distance Functions (SDFs)
+- Real-time computation of SDFs for mesh and its performance implications
+- Real-time generation of mesh from SDFs and associated performance considerations
+- Collision between particles and SDFs
+- Operations involving manipulation of SDFs
+
+## Implement
+
+### Collision between particles and SDFs
 
 
 
