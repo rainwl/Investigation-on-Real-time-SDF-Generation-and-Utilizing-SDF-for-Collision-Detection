@@ -70,6 +70,8 @@ There's so many repos for this like cube marching .
 
 [A Repo. for Signed Distance Fields in Unity](https://github.com/samuelbigos/signed_distance_fields_in_unity)
 
+[A Repo. for Vfx-Sdf-Collide](https://github.com/rainwl/VFX-SDF-DEMO.git)
+
 ### VFX tutorials
 
 [Youtube Unity Visual Effect Graph Tutorials](https://www.youtube.com/watch?v=TwWL5IY4Lqs&list=PLQMQNmwN3FvySzk-SdqJeRa6hpH6FYKji)
